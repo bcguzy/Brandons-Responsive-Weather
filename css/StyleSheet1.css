@@ -1,0 +1,17 @@
+body{
+    text-align: center;
+    background-color: rgb(8, 113, 199);
+    color: white;
+}
+p{
+    font-family: arial;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+i{
+    max-width: 100%;
+    display: block;
+    color: #ffffff;
+}

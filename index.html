@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Brandon's Responsive Weather</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href ="css/bootstrap.css" rel ="stylesheet">
+    <link href="css/owfont-regular.css" rel="stylesheet" type="text/css">
+    <link href ="css/StyleSheet1.css" rel ="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    
+</head>
+
+<body>
+    <div class = "container-fluid center" >
+    <div class = "row" style = "margin-top: 16px; justify-content: center" >
+            <div class = "col" >
+                <p id = "location" style = "font-size: min(6vw,50px)"></p>
+                <p id = "temp" style = "font-size: min(10vw,75px)"></p>
+                <p id = "condition" style = "font-size: min(6vw,50px)"></p>
+            </div>
+            <div class = "col">
+                <i id = "weatherIcon" class = "" style = "font-size: min(40vw,350px)"></i>
+            </div>
+    </div>
+    <p id = "change"></p>
+    <div id = "5day" class="row">
+        <div id = "day0" class="col">
+            <p id = "date0" style = "margin-bottom: 4px"></p>
+            <i id = "day0i" style = "font-size: min(10vw, 125px)"></i>
+            <p id = "day0p"></p>
+        </div>
+        <div id = "day1" class="col">
+            <p id = "date1" style = "margin-bottom: 4px"></p>
+            <i id = "day1i" style = "font-size: min(10vw, 125px)"></i>
+            <p id = "day1p"></p>
+        </div>
+        <div id = "day2" class="col">
+            <p id = "date2" style = "margin-bottom: 4px"></p>
+            <i id = "day2i" style = "font-size: min(10vw, 125px)"></i>
+            <p id = "day2p"></p>
+        </div>
+        <div id = "day3" class="col">
+            <p id = "date3" style = "margin-bottom: 4px"></p>
+            <i id = "day3i" style = "font-size: min(10vw, 125px)"></i>
+            <p id = "day3p"></p>
+        </div>
+        <div id = "day4" class="col">
+            <p id = "date4" style = "margin-bottom: 4px"></p>
+            <i id = "day4i" style = "font-size: min(10vw, 125px)"></i>
+            <p id = "day4p"></p>
+        </div>
+     </div>
+    </div>
+    <label for="zip">Enter Zip Code to Get Weather: </label>
+    <input type="number" id="zip" name="zip">
+    <button type = "button" class="btn btn-secondary" onclick = "getWeather(document.getElementById('zip').value)">Submit</button>
+    
+    <script src ="app.js"></script>
+</body>
+</html>
